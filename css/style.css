@@ -11,13 +11,40 @@
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     color: #702082;
-    background: #CFC096;
-  }
+    background: #94e6fd;
+  } 
 
+  :root {
+  --primary-bg-color: #fd5786;
+  --primary-color: #ffffff; 
+}
+
+body {
+  background-color: var(--primary-bg-color);
+}
+
+.container {
+  color: var(--primary-bg-color);
+  background-color: var(--primary-color);
+  padding: 15px;
+}
+
+.container h2 {
+  border-bottom: 2px solid var(--primary-bg-color);
+}
+
+.container .note {
+  border: 1px solid var(--primary-bg-color);
+  padding: 10px;
+}
+
+.skip{
+  color: #0000;
+}
   .radio {
     grid-column-start: 1;
     grid-column-end: 3;
-    /* background: #575294; */
+    /*background: #575294; */
     color: #702082;
   }
 
@@ -27,7 +54,7 @@
     font-size: 18px;
     font-weight: bold;
     background: #CFC096;
-    color: #9B9A6D;
+    color: #0a191f;
   }
 
   #message {
@@ -55,4 +82,9 @@
 
   input[type="submit"]:hover {
     background-color: #45a049;
-  }
+  } 
+
+body {
+  font-family: "Sofia", sans-serif;
+}
+
